@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+
 
 public class ShipStatsBehavior : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class ShipStatsBehavior : MonoBehaviour
     public int engienDraw = 0;
     public int shieldDraw = 0;
     public int weaponDraw = 0;
+    public Slider healthSlider;
+    public Slider powerSlider;
+
     private float timer = 0;
     public GameObject weapons;
     public GameObject shield;
@@ -21,6 +26,8 @@ public class ShipStatsBehavior : MonoBehaviour
          weaponScriptCopy = weapons.GetComponent<WeaponScript>();
          shieldScriptCopy = shield.GetComponent<ShieldScript>();
          engenScriptCopy = engien.GetComponent<EngienScript>();
+        healthSlider.value = healt;
+        powerSlider.value = energy;
     }
 	
 	void Update ()
@@ -34,7 +41,10 @@ public class ShipStatsBehavior : MonoBehaviour
             engienDraw = engenScriptCopy.engienPower;
             timer = 0;
             energy = energy - (engienDraw + shieldDraw + weaponDraw);
-            Debug.Log(energy);
+            //Debug.Log(energy);
+
+            healthSlider.value = healt;
+            powerSlider.value = energy;
         }
 
     }
