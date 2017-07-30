@@ -101,13 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   rotationSpeed: 10
-<<<<<<< HEAD
-  target: {fileID: 4650595584759176, guid: 38d10d6bc7c120a4294da0a92fb3815b, type: 2}
-  ShipHealt: {fileID: 1587048725608138, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-  damage: 10
-=======
   target: {fileID: 4650595584759176, guid: 441f8db4d3f69f0498e31af4626c8ac3, type: 2}
->>>>>>> f41e5bc5717c8059d8aab0c253a175543036a83b
 --- !u!212 &212221852599519544
 SpriteRenderer:
   m_ObjectHideFlags: 1

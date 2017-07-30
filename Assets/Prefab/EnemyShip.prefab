@@ -83,21 +83,6 @@ MonoBehaviour:
   bullet: {fileID: 1767757933026226, guid: eaf44404dd7166145b4b677f5367ecc8, type: 2}
   target: {fileID: 4650595584759176, guid: 441f8db4d3f69f0498e31af4626c8ac3, type: 2}
   rotationSpeed: 10
-<<<<<<< HEAD
-  underFire: 0
---- !u!114 &114788896907836396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169076917901682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73004b9d7ce24214799910ab7480be3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
->>>>>>> f41e5bc5717c8059d8aab0c253a175543036a83b
 --- !u!212 &212906603818554268
 SpriteRenderer:
   m_ObjectHideFlags: 1
