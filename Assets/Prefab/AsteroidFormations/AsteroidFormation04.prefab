@@ -254,3 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b519b6a824a2e5b41ace7427e4307829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  asteroidPrefab:
+  - {fileID: 1049519347989698, guid: 08a68bd0307b83748985a48bb1cdda3c, type: 2}
+  - {fileID: 1795732833151714, guid: bcf1d597452fc614786e647a2500d8a7, type: 2}
+  - {fileID: 1817303115337746, guid: 95e0326a6ce67444fa97372d21495fdd, type: 2}
+  - {fileID: 1136760537113900, guid: 3a8f27102db0e334385c3e3d145651a0, type: 2}
+  spawnDelay: 0
