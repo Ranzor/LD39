@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class AlienFormationSpawner : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject[] enemyFormations;
+
+    public void SpawnAsteroids()
+    {
+        int index = Random.Range(0, enemyFormations.Length);
+        GameObject curFormation = Instantiate(enemyFormations[index], transform.position, Quaternion.identity);
+        curFormation.transform.parent = transform;
+    }
 }
