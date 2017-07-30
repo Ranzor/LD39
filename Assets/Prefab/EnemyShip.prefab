@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4874524545390442}
   - component: {fileID: 212906603818554268}
-  - component: {fileID: 114788896907836396}
   - component: {fileID: 114560992944110232}
   - component: {fileID: 61812213887922588}
   m_Layer: 0
@@ -76,14 +75,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1169076917901682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19d08179bfcef4a478f45d2bc0e61570, type: 3}
+  m_Script: {fileID: 11500000, guid: e613978e6c652d84693cb693069d2b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyRateOfFire: 0
+  enemyRateOfFire: 2
   timer: 0
-  bullet: {fileID: 1767757933026226, guid: 9d413b37328a594418c12c8fe3fb4187, type: 2}
-  target: {fileID: 4650595584759176, guid: 38d10d6bc7c120a4294da0a92fb3815b, type: 2}
+  bullet: {fileID: 1767757933026226, guid: eaf44404dd7166145b4b677f5367ecc8, type: 2}
+  target: {fileID: 4650595584759176, guid: 441f8db4d3f69f0498e31af4626c8ac3, type: 2}
   rotationSpeed: 10
+<<<<<<< HEAD
   underFire: 0
 --- !u!114 &114788896907836396
 MonoBehaviour:
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73004b9d7ce24214799910ab7480be3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> f41e5bc5717c8059d8aab0c253a175543036a83b
 --- !u!212 &212906603818554268
 SpriteRenderer:
   m_ObjectHideFlags: 1
