@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e613978e6c652d84693cb693069d2b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyRateOfFire: 10
+  enemyRateOfFire: 2
   timer: 0
   bullet: {fileID: 1767757933026226, guid: eaf44404dd7166145b4b677f5367ecc8, type: 2}
   target: {fileID: 4650595584759176, guid: 441f8db4d3f69f0498e31af4626c8ac3, type: 2}
