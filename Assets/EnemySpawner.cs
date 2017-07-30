@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
     public GameObject[] enemyPrefab;
+    public int rotationSpeed;
+    public Transform target;
 
     public float spawnDelay = 0f;
     int index;
@@ -16,6 +18,11 @@ public class EnemySpawner : MonoBehaviour {
 
     private void Update()
     {
+        Vector3 vectorToTarget = target.position - transform.position;
+        float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * rotationSpeed);
+
         if (AllMembersDead())
         {
             Destroy(gameObject);
@@ -69,4 +76,6 @@ public class EnemySpawner : MonoBehaviour {
             enemy.transform.parent = child;
         }
     }
+
+    
 }
