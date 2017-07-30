@@ -9,7 +9,7 @@ public class AsteroidFormationSpawner : MonoBehaviour {
     public void SpawnAsteroids()
     {
         int index = Random.Range(0, asteroidFormations.Length);
-        GameObject curFormation = Instantiate(asteroidFormations[index], transform.position, Quaternion.identity);
+        GameObject curFormation = Instantiate(asteroidFormations[index], new Vector3(20,0,0), Quaternion.identity);
         curFormation.transform.parent = transform;
     }    
 }

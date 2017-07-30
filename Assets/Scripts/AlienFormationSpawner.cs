@@ -6,7 +6,7 @@ public class AlienFormationSpawner : MonoBehaviour {
 
     public GameObject[] enemyFormations;
 
-    public void SpawnAsteroids()
+    public void SpawnAliens()
     {
         int index = Random.Range(0, enemyFormations.Length);
         GameObject curFormation = Instantiate(enemyFormations[index], transform.position, Quaternion.identity);

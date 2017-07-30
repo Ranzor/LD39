@@ -9,11 +9,13 @@ public class EventScript : MonoBehaviour
     public string[] events;
     public GameObject formationCointainer;
     private AsteroidFormationSpawner asteroidFormationSpawner;
+    private AlienFormationSpawner alienFormationSpawner;
 
     void Start ()
     {
         timeUntilEvent = Random.Range(minTid, maxTid);
         asteroidFormationSpawner = formationCointainer.GetComponent<AsteroidFormationSpawner>();
+        alienFormationSpawner = formationCointainer.GetComponent<AlienFormationSpawner>();
 	}
 
 
@@ -29,6 +31,11 @@ public class EventScript : MonoBehaviour
             {
                 asteroidFormationSpawner.SpawnAsteroids();
             }
+            if(events[eventToUse] == "Aliens" )
+            {
+                alienFormationSpawner.SpawnAliens();
+            }
+
         }
 	}
 }
