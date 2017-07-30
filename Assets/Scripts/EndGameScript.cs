@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndGameScript : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EndGameScript : MonoBehaviour
     public Canvas GOHealthCanvas;
     public Canvas GOWinCanvas;
 
+    public Slider distanceSlider;
+
     public float distanceTravled;
     public float goal;
 
@@ -18,11 +21,13 @@ public class EndGameScript : MonoBehaviour
     {
         shipStat = FindObjectOfType<ShipStatsBehavior>();
         speed = FindObjectOfType<EngienScript>();
+        distanceSlider.maxValue = goal;
 	}
 	
 	void Update ()
     {
         distanceTravled += speed.travelSpeed * Time.deltaTime;
+        distanceSlider.value = distanceTravled;
 
         if (shipStat.healt <= 0)
         {

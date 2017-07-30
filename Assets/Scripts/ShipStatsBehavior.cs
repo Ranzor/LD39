@@ -11,7 +11,7 @@ public class ShipStatsBehavior : MonoBehaviour
     public int shieldDraw = 0;
     public int weaponDraw = 0;
     public Slider healthSlider;
-    public Slider powerSlider;
+    public Slider powerSlider;    
 
     private float timer = 0;
     public GameObject weapons;
