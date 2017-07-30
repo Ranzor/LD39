@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class AsteroidBehaviour : MonoBehaviour {
 
-    public GameObject shipStats;
+    //public GameObject shipStats;
     public int damage;
     public int speed;
     private ShipStatsBehavior shipScript;
     // Use this for initialization
 	void Start ()
     {
-        shipScript = shipStats.GetComponent<ShipStatsBehavior>();
+        shipScript = FindObjectOfType<ShipStatsBehavior>();
 	}
 	
 	// Update is called once per frame

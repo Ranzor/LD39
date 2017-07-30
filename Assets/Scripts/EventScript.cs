@@ -9,7 +9,6 @@ public class EventScript : MonoBehaviour
     public string[] events;
     public GameObject formationCointainer;
     private AsteroidFormationSpawner asteroidFormationSpawner;
-    private int eventToUse;
 
     void Start ()
     {
@@ -21,12 +20,12 @@ public class EventScript : MonoBehaviour
     void Update ()
     {
         timeUntilEvent -= Time.deltaTime;
-        if(timeUntilEvent <= 0)
+        if (timeUntilEvent <= 0)
         {
             timeUntilEvent = Random.Range(minTid, maxTid);
-            eventToUse = Random.Range(0, events.Length);
+            int eventToUse = Random.Range(0, events.Length);
             Debug.Log(events[eventToUse]);
-            if(events[eventToUse] == "Asteroid")
+            if (events[eventToUse] == "Astroid")
             {
                 asteroidFormationSpawner.SpawnAsteroids();
             }
