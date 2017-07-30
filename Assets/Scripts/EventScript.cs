@@ -7,13 +7,14 @@ public class EventScript : MonoBehaviour
     public float maxTid;
     public float timeUntilEvent;
     public string[] events;
-    public GameObject eventSpawner;
-
+    public GameObject formationCointainer;
+    private AsteroidFormationSpawner asteroidFormationSpawner;
     private int eventToUse;
 
     void Start ()
     {
         timeUntilEvent = Random.Range(minTid, maxTid);
+        asteroidFormationSpawner = formationCointainer.GetComponent<AsteroidFormationSpawner>();
 	}
 
 
@@ -27,7 +28,7 @@ public class EventScript : MonoBehaviour
             Debug.Log(events[eventToUse]);
             if(events[eventToUse] == "Asteroid")
             {
-
+                asteroidFormationSpawner.SpawnAsteroids();
             }
         }
 	}
