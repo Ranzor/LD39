@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\AsteroidBehaviour.cs" />
     <Compile Include="Assets\Scripts\AsteroidFormationSpawner.cs" />
     <Compile Include="Assets\Scripts\CharAnimationScript.cs" />
+    <Compile Include="Assets\Scripts\EndGameScript.cs" />
     <Compile Include="Assets\Scripts\EngienScript.cs" />
     <Compile Include="Assets\Scripts\EventScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
