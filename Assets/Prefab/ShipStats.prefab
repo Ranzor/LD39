@@ -20,7 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4960813084906996}
   - component: {fileID: 114260028736931332}
+<<<<<<< HEAD
   - component: {fileID: 114496639751234478}
+=======
+  - component: {fileID: 114387601227742638}
+>>>>>>> d2446ecf288d1c9593b7f7da757d61b7896104af
   m_Layer: 0
   m_Name: ShipStats
   m_TagString: Untagged
@@ -62,7 +66,11 @@ MonoBehaviour:
   weapons: {fileID: 0}
   shield: {fileID: 0}
   engien: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &114496639751234478
+=======
+--- !u!114 &114387601227742638
+>>>>>>> d2446ecf288d1c9593b7f7da757d61b7896104af
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -73,5 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6878ed673b7494e8af24bb1ecc68b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   distanceTravled: 0
   goal: 0
+=======
+>>>>>>> d2446ecf288d1c9593b7f7da757d61b7896104af
