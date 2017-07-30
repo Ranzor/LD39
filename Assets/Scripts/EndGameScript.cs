@@ -6,6 +6,10 @@ public class EndGameScript : MonoBehaviour
 {
     ShipStatsBehavior shipStat;
     EngienScript speed;
+
+    public Canvas GOEnergyCanvas;
+    public Canvas GOHealthCanvas;
+
     public float distanceTravled;
     public float goal;
 
@@ -19,9 +23,13 @@ public class EndGameScript : MonoBehaviour
     {
         distanceTravled += speed.travelSpeed * Time.deltaTime;
 
-        if (shipStat.healt <= 0 || shipStat.energy <= 0)
+        if (shipStat.healt <= 0)
         {
-            Debug.Log("You losse");
+            GOHealthCanvas.enabled = true;
+            
+        }else if (shipStat.energy <= 0)
+        {
+            GOEnergyCanvas.enabled = true;
         }
         if (distanceTravled >= goal)
         {
