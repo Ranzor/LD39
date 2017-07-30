@@ -52,6 +52,7 @@ public class AsteroidSpawner : MonoBehaviour {
         Transform freePosition = NextFreePosition();
         if (freePosition)
         {
+            index = Random.Range(0, asteroidPrefab.Length);
             GameObject enemy = Instantiate(asteroidPrefab[index], freePosition.position, Quaternion.identity) as GameObject;
             enemy.transform.parent = freePosition;
         }
@@ -66,6 +67,7 @@ public class AsteroidSpawner : MonoBehaviour {
     {
         foreach (Transform child in transform)
         {
+            index = Random.Range(0, asteroidPrefab.Length);
             GameObject enemy = Instantiate(asteroidPrefab[index], child.transform.position, Quaternion.identity) as GameObject;
             enemy.transform.parent = child;
         }

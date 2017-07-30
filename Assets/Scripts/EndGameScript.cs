@@ -9,6 +9,7 @@ public class EndGameScript : MonoBehaviour
 
     public Canvas GOEnergyCanvas;
     public Canvas GOHealthCanvas;
+    public Canvas GOWinCanvas;
 
     public float distanceTravled;
     public float goal;
@@ -26,14 +27,17 @@ public class EndGameScript : MonoBehaviour
         if (shipStat.healt <= 0)
         {
             GOHealthCanvas.enabled = true;
+            Time.timeScale = 0;
             
         }else if (shipStat.energy <= 0)
         {
             GOEnergyCanvas.enabled = true;
+            Time.timeScale = 0;
         }
         if (distanceTravled >= goal)
         {
-            Debug.Log("You vin");
+            GOWinCanvas.enabled = true;
+            Time.timeScale = 0;
         }
 		
 	}

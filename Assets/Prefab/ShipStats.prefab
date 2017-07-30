@@ -76,4 +76,4 @@ MonoBehaviour:
   GOEnergyCanvas: {fileID: 0}
   GOHealthCanvas: {fileID: 0}
   distanceTravled: 0
-  goal: 20
+  goal: 200
