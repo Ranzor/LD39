@@ -78,7 +78,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AsteroidBehaviour.cs" />
+    <Compile Include="Assets\Scripts\AlienFormationSpawner.cs" />
+    <Compile Include="Assets\Scripts\AsteroidBehaviour.cs" />
+    <Compile Include="Assets\Scripts\AsteroidFormationSpawner.cs" />
     <Compile Include="Assets\Scripts\CharAnimationScript.cs" />
     <Compile Include="Assets\Scripts\EngienScript.cs" />
     <Compile Include="Assets\Scripts\EventScript.cs" />

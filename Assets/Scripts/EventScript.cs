@@ -7,6 +7,8 @@ public class EventScript : MonoBehaviour
     public float maxTid;
     public float timeUntilEvent;
     public string[] events;
+    public GameObject eventSpawner;
+
     private int eventToUse;
 
     void Start ()
@@ -23,6 +25,10 @@ public class EventScript : MonoBehaviour
             timeUntilEvent = Random.Range(minTid, maxTid);
             eventToUse = Random.Range(0, events.Length);
             Debug.Log(events[eventToUse]);
+            if(events[eventToUse] == "Asteroid")
+            {
+
+            }
         }
 	}
 }
