@@ -48,3 +48,6 @@ Assets/Scenes/Scene.unity
 *.meta
 Assets/Scenes/Scene.unity
 >>>>>>> 3d215ac26ccdfbe4752f2b3f3d00d157d7b92956
+*.unity
+*.meta
+*.meta
