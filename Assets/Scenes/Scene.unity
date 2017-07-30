@@ -7075,6 +7075,78 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1001 &1180564281
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825152263195584, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114004169984422104, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1176534610}
+    - target: {fileID: 114004169984422104, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: powerSlider
+      value: 
+      objectReference: {fileID: 2137063186}
+    - target: {fileID: 114004169984422104, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: weapons
+      value: 
+      objectReference: {fileID: 1770561332}
+    - target: {fileID: 114004169984422104, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 1307545132}
+    - target: {fileID: 114004169984422104, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: engien
+      value: 
+      objectReference: {fileID: 1726603605}
+    - target: {fileID: 114301086507595342, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: goal
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1201210608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8540,78 +8612,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611160828}
---- !u!1001 &1637109374
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960813084906996, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114260028736931332, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 1176534610}
-    - target: {fileID: 114260028736931332, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: powerSlider
-      value: 
-      objectReference: {fileID: 2137063186}
-    - target: {fileID: 114260028736931332, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: weapons
-      value: 
-      objectReference: {fileID: 1770561332}
-    - target: {fileID: 114260028736931332, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: shield
-      value: 
-      objectReference: {fileID: 1307545132}
-    - target: {fileID: 114260028736931332, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: engien
-      value: 
-      objectReference: {fileID: 1726603605}
-    - target: {fileID: 114496639751234478, guid: 90f251ef3473fb841969463e5dbb05d6,
-        type: 2}
-      propertyPath: goal
-      value: 20
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1647360090
 GameObject:
   m_ObjectHideFlags: 0
