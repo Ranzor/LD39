@@ -75,5 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOEnergyCanvas: {fileID: 0}
   GOHealthCanvas: {fileID: 0}
+  GOWinCanvas: {fileID: 0}
   distanceTravled: 0
   goal: 200

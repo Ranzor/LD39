@@ -135,9 +135,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1934778046983360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca28de25ffc942d43aff75ff0399621e, type: 3}
+  m_Script: {fileID: 11500000, guid: c3d6cf83092caca428355ae5d790dc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab:
-  - {fileID: 1169076917901682, guid: 8294b38035ca2ad44b1abbdff9643834, type: 2}
+  - {fileID: 1169076917901682, guid: a2f1fa79356bb8547989f5de97de94ff, type: 2}
+  rotationSpeed: 0
+  target: {fileID: 4650595584759176, guid: 38d10d6bc7c120a4294da0a92fb3815b, type: 2}
   spawnDelay: 0

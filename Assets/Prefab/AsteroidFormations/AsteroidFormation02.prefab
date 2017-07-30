@@ -251,7 +251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875860389893492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b519b6a824a2e5b41ace7427e4307829, type: 3}
+  m_Script: {fileID: 11500000, guid: f86a2e536af83df4cb8aba4552f79a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefab:

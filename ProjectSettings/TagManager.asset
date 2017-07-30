@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Room
+  - Enemy
+  - ShipMissile
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Walls
+  - Missile
   - 
   - 
   - 

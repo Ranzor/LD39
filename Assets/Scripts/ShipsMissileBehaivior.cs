@@ -2,26 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MissilBehavior : MonoBehaviour
+public class ShipsMissileBehaivior : MonoBehaviour
 {
+
     public int speed;
     public int rotationSpeed;
     public Transform target;
-    public GameObject ShipHealt;
-    private ShieldScript mitigation;
-    private ShipStatsBehavior shipScript;
-    public int damage;
-    
 
-    void Start ()
+
+    void Start()
     {
-        shipScript = FindObjectOfType<ShipStatsBehavior>();
-        mitigation = FindObjectOfType<ShieldScript>();
         
     }
-	
 
-	void Update ()
+
+    void Update()
     {
         Vector3 vectorToTarget = target.position - transform.position;
         float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
@@ -34,19 +29,11 @@ public class MissilBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (mitigation.shieldStrength == 1)
+        if(collision.tag != "Wall")
         {
-            shipScript.healt -= damage;
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
-        else if (mitigation.shieldStrength == 2)
-        {
-            shipScript.healt -= (damage / 2);
-        }
-        else
-        {
-            shipScript.healt -= (damage * 0);
-        }
-        Destroy(gameObject);
+        
     }
-
 }

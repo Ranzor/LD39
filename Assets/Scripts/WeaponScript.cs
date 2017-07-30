@@ -4,9 +4,14 @@ using System.Collections;
 public class WeaponScript : MonoBehaviour
 {
     public int weaponPower = 1;
-    public int rateOfFire = 1;
+    public float rateOfFire;
     public Canvas WeaponCanvas;
     public UnityEngine.UI.Text text;
+
+    private void Start()
+    {
+        SetLevel1();
+    }
 
     private void Update()
     {
@@ -24,16 +29,16 @@ public class WeaponScript : MonoBehaviour
     public void SetLevel1()
     {
         weaponPower = 1;
-        rateOfFire = 1;
+        rateOfFire = 7;
     }
     public void SetLevel2()
     {
         weaponPower = 2;
-        rateOfFire = 2;
+        rateOfFire = 3;
     }
     public void SetLevel3()
     {
         weaponPower = 3;
-        rateOfFire = 3;
+        rateOfFire = 0.5f;
     }
 }

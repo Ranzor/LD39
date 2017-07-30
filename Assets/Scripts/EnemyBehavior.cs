@@ -10,10 +10,13 @@ public class EnemyBehavior : MonoBehaviour
     private GameObject bulletOut;
     public Transform target;
     public float rotationSpeed;
+    public bool underFire;
+    
     
 
 	void Start ()
     {
+        underFire = false;
         enemyRateOfFire = 10;
         timer = enemyRateOfFire;
 
