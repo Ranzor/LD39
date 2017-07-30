@@ -8,10 +8,13 @@ public class AsteroidBehaviour : MonoBehaviour {
     public int damage;
     public int speed;
     private ShipStatsBehavior shipScript;
+    private ShieldScript mitigation;
+
     // Use this for initialization
 	void Start ()
     {
         shipScript = FindObjectOfType<ShipStatsBehavior>();
+        mitigation = FindObjectOfType<ShieldScript>();
 	}
 	
 	// Update is called once per frame
@@ -22,7 +25,18 @@ public class AsteroidBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        shipScript.healt -= damage;
+        if (mitigation.shieldStrength == 1)
+        {
+            shipScript.healt -= damage;
+        }
+        else if(mitigation.shieldStrength == 2)
+        {
+            shipScript.healt -= (damage/2);
+        }
+        else
+        {
+            shipScript.healt -= (damage * 0);
+        }
         Destroy(gameObject);
     }
 }

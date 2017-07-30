@@ -4,7 +4,7 @@ using System.Collections;
 public class EngienScript : MonoBehaviour
 {
     public int engienPower = 1;
-    public int travelSpeed = 1;
+    public float travelSpeed = 1;
     public Canvas EngineCanvas;
     public UnityEngine.UI.Text text;
 
@@ -25,7 +25,7 @@ public class EngienScript : MonoBehaviour
     public void SetLevel1()
     {
         engienPower = 1;
-        travelSpeed = 1;
+        travelSpeed = 1.5f;
     }
     public void SetLevel2()
     {
@@ -35,7 +35,7 @@ public class EngienScript : MonoBehaviour
     public void SetLevel3()
     {
         engienPower = 3;
-        travelSpeed = 3;
+        travelSpeed = 2.5f;
     }
 
 
