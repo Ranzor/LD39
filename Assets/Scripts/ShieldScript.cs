@@ -4,6 +4,7 @@ using System.Collections;
 public class ShieldScript : MonoBehaviour
 {
     public int shieldPower = 1;
+    public int shieldStrength = 1;
     public Canvas ShieldCanvas;
     public UnityEngine.UI.Text text;
 
@@ -24,13 +25,16 @@ public class ShieldScript : MonoBehaviour
     public void SetLevel1()
     {
         shieldPower = 1;
+        shieldStrength = 1;
     }
     public void SetLevel2()
     {
         shieldPower = 2;
+        shieldStrength = 2;
     }
     public void SetLevel3()
     {
         shieldPower = 3;
+        shieldStrength = 3;
     }
 }

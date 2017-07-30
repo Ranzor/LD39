@@ -7454,6 +7454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shieldPower: 1
+  shieldStrength: 1
   ShieldCanvas: {fileID: 224872374}
   text: {fileID: 83662375}
 --- !u!1 &1328196799
@@ -8603,6 +8604,11 @@ Prefab:
       propertyPath: engien
       value: 
       objectReference: {fileID: 1726603605}
+    - target: {fileID: 114496639751234478, guid: 90f251ef3473fb841969463e5dbb05d6,
+        type: 2}
+      propertyPath: goal
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90f251ef3473fb841969463e5dbb05d6, type: 2}
   m_IsPrefabParent: 0
@@ -8912,6 +8918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   engienPower: 1
+  travelSpeed: 1
   EngineCanvas: {fileID: 1281808682}
   text: {fileID: 635906427}
 --- !u!1 &1735380015
@@ -9146,6 +9153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPower: 1
+  rateOfFire: 1
   WeaponCanvas: {fileID: 1735380020}
   text: {fileID: 6759773}
 --- !u!1 &1780712088
