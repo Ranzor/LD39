@@ -27,24 +27,49 @@ public class AsteroidBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (mitigation.shieldStrength == 1)
-        {
-            shipScript.healt -= damage;
-        }
-        else if(mitigation.shieldStrength == 2)
-        {
-            shipScript.healt -= (damage/2);
-        }
-        else
-        {
-            shipScript.healt -= (damage * 0);
-        }
-
         if (collision.tag == "Wall")
         {
+                if (mitigation.shieldStrength == 1)
+            {
+                shipScript.healt -= damage;
+            }
+            else if(mitigation.shieldStrength == 2)
+            {
+                shipScript.healt -= (damage/2);
+            }
+            else
+            {
+                shipScript.healt -= (damage * 0);
+            }
+
             AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            if(Random.Range(1,5) == 1)
+            {
+                int rand = Random.Range(1, 5);
+                if(rand == 1)
+                {
+                    WeaponScript weapon = FindObjectOfType<WeaponScript>();
+                    weapon.SetLevel3();
+                }
+                else if(rand == 2)
+                {
+                    EngienScript engien = FindObjectOfType<EngienScript>();
+                    engien.SetLevel1();
+                }
+                else if(rand == 3)
+                {
+                    ShieldScript shield = FindObjectOfType<ShieldScript>();
+                    shield.SetLevel1();
+                }
+                else if(rand == 4)
+                {
+                    HullReapair hullRepair = FindObjectOfType<HullReapair>();
+                    hullRepair.SetLevel1();
+                }
+            }
+
         }
         else
         {
