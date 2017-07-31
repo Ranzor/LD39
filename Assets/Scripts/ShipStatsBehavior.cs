@@ -10,6 +10,7 @@ public class ShipStatsBehavior : MonoBehaviour
     public int engienDraw = 0;
     public int shieldDraw = 0;
     public int weaponDraw = 0;
+    public int hullReapairDraw;
     public Slider healthSlider;
     public Slider powerSlider;    
 
@@ -20,12 +21,15 @@ public class ShipStatsBehavior : MonoBehaviour
     WeaponScript weaponScriptCopy;
     ShieldScript shieldScriptCopy;
     EngienScript engenScriptCopy;
+    HullReapair hullReapairScriptCopy;
+
 
     void Start ()
     {
          weaponScriptCopy = weapons.GetComponent<WeaponScript>();
          shieldScriptCopy = shield.GetComponent<ShieldScript>();
          engenScriptCopy = engien.GetComponent<EngienScript>();
+        hullReapairScriptCopy = FindObjectOfType<HullReapair>();
         healthSlider.value = healt;
         powerSlider.value = energy;
         healthSlider.maxValue = healt;
@@ -41,8 +45,9 @@ public class ShipStatsBehavior : MonoBehaviour
             weaponDraw = weaponScriptCopy.weaponPower;
             shieldDraw = shieldScriptCopy.shieldPower;
             engienDraw = engenScriptCopy.engienPower;
+            hullReapairDraw = hullReapairScriptCopy.hullReapairPower;
             timer = 0;
-            energy = energy - (engienDraw + shieldDraw + weaponDraw);
+            energy = energy - (engienDraw + shieldDraw + weaponDraw + hullReapairDraw);
             //Debug.Log(energy);
 
             healthSlider.value = healt;
