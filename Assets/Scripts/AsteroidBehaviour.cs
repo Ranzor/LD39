@@ -10,6 +10,7 @@ public class AsteroidBehaviour : MonoBehaviour {
     private ShipStatsBehavior shipScript;
     private ShieldScript mitigation;
     public AudioClip explosionAudio;
+    public GameObject explosionPrefab;
 
     // Use this for initialization
 	void Start ()
@@ -38,10 +39,16 @@ public class AsteroidBehaviour : MonoBehaviour {
         {
             shipScript.healt -= (damage * 0);
         }
+
         if (collision.tag == "Wall")
         {
             AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
