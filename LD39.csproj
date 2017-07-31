@@ -78,16 +78,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ExplosionScript.cs" />
+    <Compile Include="Assets\ParicleSystemScript.cs" />
     <Compile Include="Assets\Scripts\AlienFormationSpawner.cs" />
     <Compile Include="Assets\Scripts\AsteroidBehaviour.cs" />
     <Compile Include="Assets\Scripts\AsteroidFormationSpawner.cs" />
     <Compile Include="Assets\Scripts\AsteroidSpawner.cs" />
+    <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\CharAnimationScript.cs" />
     <Compile Include="Assets\Scripts\EndGameScript.cs" />
     <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\EnergyCrankScript.cs" />
     <Compile Include="Assets\Scripts\EngienScript.cs" />
     <Compile Include="Assets\Scripts\EventScript.cs" />
+    <Compile Include="Assets\Scripts\HullReapair.cs" />
     <Compile Include="Assets\Scripts\MissilBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\ShieldBehavior.cs" />
@@ -96,6 +101,8 @@
     <Compile Include="Assets\Scripts\ShipsMissileBehaivior.cs" />
     <Compile Include="Assets\Scripts\ShipStatsBehavior.cs" />
     <Compile Include="Assets\Scripts\WeaponScript.cs" />
+    <Compile Include="Assets\ShieldLevel2Script.cs" />
+    <Compile Include="Assets\ShieldLevel3Script.cs" />
     <Compile Include="Assets\TimeKeeper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

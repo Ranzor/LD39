@@ -9,6 +9,13 @@ public class ShieldScript : MonoBehaviour
     public UnityEngine.UI.Text text;
     public AudioClip[] boostSounds;
     public AudioClip[] reduceSounds;
+    public Sprite shieldLevel2;
+    public GameObject shieldLevel3;
+
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {

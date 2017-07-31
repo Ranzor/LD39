@@ -7,20 +7,25 @@ public class EnergyCrankScript : MonoBehaviour
 
     public int reapairPower;
     private ShipStatsBehavior energy;
+    public Canvas energyCrankCanvas;
 
 	void Start ()
     {
         energy = FindObjectOfType<ShipStatsBehavior>();
 	}
-	
 
-	void Update ()
-    {
-
-    }
-
-    private void Repair()
+    public void Repair()
     {
         energy.energy += reapairPower;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        energyCrankCanvas.enabled = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        energyCrankCanvas.enabled = false;
     }
 }

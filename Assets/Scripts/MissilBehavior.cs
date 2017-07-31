@@ -11,6 +11,7 @@ public class MissilBehavior : MonoBehaviour
     public AudioClip explosionAudio;
     private ShieldScript mitigation;
     private ShipStatsBehavior shipScript;
+    public GameObject explosionPrefab;
     public int damage;
     
 
@@ -35,22 +36,25 @@ public class MissilBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (mitigation.shieldStrength == 1)
+        if (collision.tag != "Enemy")
         {
-            shipScript.healt -= damage;
-        }
-        else if (mitigation.shieldStrength == 2)
-        {
-            shipScript.healt -= (damage / 2);
-        }
-        else
-        {
-            shipScript.healt -= (damage * 0);
-        }
+            if (mitigation.shieldStrength == 1)
+            {
+                shipScript.healt -= damage;
+            }
+            else if (mitigation.shieldStrength == 2)
+            {
+                shipScript.healt -= (damage / 2);
+            }
+            else
+            {
+                shipScript.healt -= (damage * 0);
+            }
 
-        AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
-
-        Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 
 }

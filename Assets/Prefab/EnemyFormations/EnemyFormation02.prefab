@@ -141,5 +141,5 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 1169076917901682, guid: 8294b38035ca2ad44b1abbdff9643834, type: 2}
   rotationSpeed: 0
-  target: {fileID: 4339254996902784, guid: 1ec2a94dea13a5c41a56a02f2c4eb0bb, type: 2}
+  target: {fileID: 4650595584759176, guid: 441f8db4d3f69f0498e31af4626c8ac3, type: 2}
   spawnDelay: 0

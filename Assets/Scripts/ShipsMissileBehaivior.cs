@@ -9,6 +9,7 @@ public class ShipsMissileBehaivior : MonoBehaviour
     public int rotationSpeed;
     public Transform target;
     public AudioClip explosionAudio;
+    public GameObject explosionPrefab;
 
 
     void Start()
@@ -30,9 +31,10 @@ public class ShipsMissileBehaivior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag != "Wall")
+        if(collision.tag == "Enemy")
         {
             AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

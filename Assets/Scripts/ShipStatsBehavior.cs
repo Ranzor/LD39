@@ -39,6 +39,10 @@ public class ShipStatsBehavior : MonoBehaviour
 	void Update ()
     {
         timer = timer + Time.deltaTime;
+        if(healt > healthSlider.maxValue)
+        {
+            healt = (int)healthSlider.maxValue;
+        }
 
         if (timer >= 1)
         {

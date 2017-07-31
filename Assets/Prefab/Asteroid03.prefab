@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   speed: 3
+  explosionAudio: {fileID: 8300000, guid: 3cd4ae6eebde3b8448639cbd566e8e12, type: 3}
+  explosionPrefab: {fileID: 1434419244210408, guid: 8aef778e48351f54fad4d8a2ebe8758d,
+    type: 2}
 --- !u!212 &212322548706729702
 SpriteRenderer:
   m_ObjectHideFlags: 1
