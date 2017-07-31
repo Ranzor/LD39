@@ -28,6 +28,8 @@ public class ShipStatsBehavior : MonoBehaviour
          engenScriptCopy = engien.GetComponent<EngienScript>();
         healthSlider.value = healt;
         powerSlider.value = energy;
+        healthSlider.maxValue = healt;
+        powerSlider.maxValue = energy;
     }
 	
 	void Update ()
