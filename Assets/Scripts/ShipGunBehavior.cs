@@ -8,6 +8,8 @@ public class ShipGunBehavior : MonoBehaviour
     public float timer;
     private GameObject bulletOut;
     public GameObject bullet;
+    public float cameraShakeTimer;
+    public float cameraShakeDuration;
 
     void Start()
     {
@@ -19,6 +21,16 @@ public class ShipGunBehavior : MonoBehaviour
     {
         fireRate = FindObjectOfType<WeaponScript>().rateOfFire;
         timer -= Time.deltaTime;
+
+        if (cameraShakeTimer > -1)
+        {
+            cameraShakeTimer -= Time.deltaTime;
+        }
+
+        if(cameraShakeTimer >= 0)
+        {
+            FindObjectOfType<CameraShake>().ShakeCamera();
+        }
 
         EnemyBehavior[] enemys = GameObject.FindObjectsOfType<EnemyBehavior>();
         if (!(enemys.Length == 0))

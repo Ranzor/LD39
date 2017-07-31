@@ -11,9 +11,10 @@ public class AsteroidBehaviour : MonoBehaviour {
     private ShieldScript mitigation;
     public AudioClip explosionAudio;
     public GameObject explosionPrefab;
+    public float cameraShakeDuration;
 
     // Use this for initialization
-	void Start ()
+    void Start ()
     {
         shipScript = FindObjectOfType<ShipStatsBehavior>();
         mitigation = FindObjectOfType<ShieldScript>();
@@ -22,8 +23,8 @@ public class AsteroidBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Translate(new Vector3 (-speed * Time.deltaTime,0,0), 0);
-	}
+        
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -47,11 +48,12 @@ public class AsteroidBehaviour : MonoBehaviour {
             Destroy(gameObject);
             if(Random.Range(1,5) == 1)
             {
+                FindObjectOfType<ShipGunBehavior>().cameraShakeTimer = cameraShakeDuration;
                 int rand = Random.Range(1, 5);
                 if(rand == 1)
                 {
                     WeaponScript weapon = FindObjectOfType<WeaponScript>();
-                    weapon.SetLevel3();
+                    weapon.SetLevel1();
                 }
                 else if(rand == 2)
                 {
