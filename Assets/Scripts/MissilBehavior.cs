@@ -8,6 +8,7 @@ public class MissilBehavior : MonoBehaviour
     public int rotationSpeed;
     public Transform target;
     public GameObject ShipHealt;
+    public AudioClip explosionAudio;
     private ShieldScript mitigation;
     private ShipStatsBehavior shipScript;
     public int damage;
@@ -46,6 +47,9 @@ public class MissilBehavior : MonoBehaviour
         {
             shipScript.healt -= (damage * 0);
         }
+
+        AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
+
         Destroy(gameObject);
     }
 

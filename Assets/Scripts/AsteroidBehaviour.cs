@@ -9,6 +9,7 @@ public class AsteroidBehaviour : MonoBehaviour {
     public int speed;
     private ShipStatsBehavior shipScript;
     private ShieldScript mitigation;
+    public AudioClip explosionAudio;
 
     // Use this for initialization
 	void Start ()
@@ -36,6 +37,10 @@ public class AsteroidBehaviour : MonoBehaviour {
         else
         {
             shipScript.healt -= (damage * 0);
+        }
+        if (collision.tag == "Wall")
+        {
+            AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
         }
         Destroy(gameObject);
     }

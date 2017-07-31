@@ -8,6 +8,7 @@ public class ShipsMissileBehaivior : MonoBehaviour
     public int speed;
     public int rotationSpeed;
     public Transform target;
+    public AudioClip explosionAudio;
 
 
     void Start()
@@ -31,6 +32,7 @@ public class ShipsMissileBehaivior : MonoBehaviour
     {
         if(collision.tag != "Wall")
         {
+            AudioSource.PlayClipAtPoint(explosionAudio, transform.position);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
